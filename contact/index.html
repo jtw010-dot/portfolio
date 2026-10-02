@@ -14,6 +14,25 @@
         <a href="https://github.com/jtw010-dot" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
     <h1>Contact</h1>
-    <p>This page will contain a contact form so you can get in touch.</p>
+    <p>Use this form to open a message to me in your email app.</p>
+<form action="mailto:jtw010@ucsd.edu" method="POST" enctype="text/plain">
+    <p>
+        <label>Email
+            <input name="email" type="email" value="visitor@example.com" required>
+        </label>
+    </p>
+    <p>
+        <label>Subject
+            <input name="subject" value="Hello from your portfolio" required>
+        </label>
+    </p>
+    <p>
+        <label>Message
+            <textarea name="body" rows="5" required>Hello John, I enjoyed visiting your portfolio!</textarea>
+        </label>
+    </p>
+    <button type="submit">Send message</button>
+</form>
+
 </body>
 </html>
