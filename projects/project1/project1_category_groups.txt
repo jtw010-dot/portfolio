@@ -1,0 +1,17 @@
+Grouping uses the same 28 eligible source categories. Percentages pool records, not category percentages.
+
+Breads & cakes: bread, cakes, muffins-bagels, rolls-buns-wraps
+Sweet snacks & desserts: cookies-biscuit, pastry-chocolate-candy, ice-cream-dessert
+Breakfast & cereal: breakfast, cereal
+Meals & soups: pizza, mac-cheese, prepared-meals-dishes, soup-stew
+Meat & jerky: meat-packaged, sausage-bacon, jerky
+Drinks: drink-juice, drink-shakes-other
+Yogurt & dairy drinks: dairy-yogurt-drink
+Cheese: cheese
+Chips & crackers: snacks-chips, snacks-mixes-crackers
+Snack bars: snacks-bars
+Snack nuts & seeds: snacks-nuts-seeds
+Baking: baking
+Packaged produce: produce-packaged
+Produce & beans (wf): produce-beans-wf
+Seafood: seafood

@@ -1,0 +1,10 @@
+{
+  "raw_rows": 26250,
+  "duplicates_removed": 58,
+  "clean_rows": 26192,
+  "eligible_source_categories": 28,
+  "displayed_groups": 15,
+  "plotted_records": 20889,
+  "wins": 13,
+  "csv_sha256": "404831e1f2d2607ca89f27a0568918a45d62dfb04c37186ba2fd2c48161bfe80"
+}

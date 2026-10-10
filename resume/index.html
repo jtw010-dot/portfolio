@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume: John’s portfolio</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume: John Wang</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <nav>
-        <a href="../">Home</a>
-        <a href="../projects/">Projects</a>
-        <a href="../contact/">Contact</a>
-        <a href="../resume/" aria-current="page">Resume</a>
-        <a href="https://github.com/jtw010-dot" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
-    <h1>Resume</h1>
-    <p>Jun Tao Wang (John)</p>
-    <p><strong>Sample resume:</strong> The education, experience, dates, and skills below are fictional placeholders to replace with my own details.</p>
-    <section>
-        <h2>Education</h2>
-        <article>
-            <h3>Example University — Bachelor of Science in Data Science</h3>
-            <p><time datetime="2024-09">September 2024</time> – <time datetime="2028-06">June 2028</time> (expected)</p>
-            <ul>
-                <li>Sample coursework: statistics, programming, and data visualization.</li>
-                <li>Sample focus: explaining data through clear visual stories.</li>
-            </ul>
-        </article>
-    </section>
-    <section>
-        <h2>Experience</h2>
-        <article>
-            <h3>Data Intern — Example Organization</h3>
-            <p><time datetime="2026-06">June 2026</time> – <time datetime="2026-08">August 2026</time></p>
-            <ul>
-                <li>Cleaned sample datasets and summarized patterns for a team.</li>
-                <li>Created example charts and documented the analysis process.</li>
-            </ul>
-        </article>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <article>
-            <h3>Sample Data Visualization Project</h3>
-            <p><time datetime="2026-09">September 2026</time></p>
-            <p>A placeholder project exploring a public dataset and presenting its main trends.</p>
-            <p><a href="../projects/">View my projects page</a></p>
-        </article>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Sample programming skills: Python, HTML, and CSS.</li>
-            <li>Sample analysis skills: data cleaning, statistics, and visualization.</li>
-            <li>Sample collaboration tools: Git and GitHub.</li>
-        </ul>
-    </section>
+<nav aria-label="Main navigation">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="../contact/">Contact</a>
+  <a href="../resume/" class="current" aria-current="page">Resume</a>
+  <a href="https://github.com/jtw010-dot" target="_blank" rel="noopener noreferrer">GitHub</a>
+</nav>
+<main class="resume">
+  <p class="eyebrow">Experience &amp; education</p><h1>John Wang</h1>
+  <p class="intro">Data science student interested in AI, engineering, economics, and e-commerce.</p>
+  <div class="resume-meta"><a href="mailto:jtw010@ucsd.edu">jtw010@ucsd.edu</a><a href="https://www.linkedin.com/in/jun-tao-wang-b51221342/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="../projects/">Project portfolio</a></div>
+  <section><h2>Education</h2><div>
+    <article><h3>University of California, San Diego</h3><p>B.S. in Data Science</p><p class="dates">Expected graduation: <time datetime="2028-03">March 2028</time></p><p>Junior-year transfer. Activities include DS3 UCSD, founding an online UCSD community, and founding the Triton Investing Society.</p></article>
+    <article><h3>University of California, Santa Barbara</h3><p>Studied Data Science &amp; Statistics before transferring to UCSD.</p><p class="dates"><time datetime="2023">2023</time> - <time datetime="2025-06">June 2025</time></p><p>Data Science Club and PATH Volunteering Club.</p></article>
+    <article><h3>Southpointe Academy</h3><p class="dates">Graduated <time datetime="2023-06">June 2023</time> · Vancouver, Canada</p></article>
+  </div></section>
+  <section><h2>Experience</h2><div>
+    <article><h3>Lenovo · AI Intern, Software Development Team</h3><p class="dates">Summer <time datetime="2025">2025</time></p><ul><li>Organized large-scale hand gesture image datasets with Python folder structures and batch renaming.</li><li>Integrated ONNX-based real-time inference pipelines, reducing manual labeling effort by 90%.</li><li>Built gesture recognition pipelines for future video conferencing camera software features.</li></ul></article>
+    <article><h3>Cisco Systems · AI &amp; ML Intern</h3><p class="dates">Summer <time datetime="2024">2024</time></p><ul><li>Analyzed time series with LSTM networks and Facebook Prophet for forecasting business metrics.</li><li>Designed, trained, and fine-tuned machine learning models using TensorFlow and Keras.</li><li>Applied natural language processing techniques to analyze customer feedback sentiment.</li></ul></article>
+    <article><h3>Founder · E-commerce Ventures</h3><p class="dates"><time datetime="2023">2023</time> - present</p><p>Built online ventures and used performance metrics, TikTok, and Instagram to grow reach and customer engagement.</p></article>
+  </div></section>
+  <section><h2>Skills</h2><div><ul class="skills"><li>Python</li><li>JavaScript</li><li>SQL</li><li>R</li><li>Statistical analysis</li><li>Data modeling</li><li>Technical writing</li><li>Meta &amp; TikTok marketing</li></ul><p>Communication, teamwork, problem-solving, and adaptability.</p><p>English (first language) · Mandarin (fluent)</p></div></section>
+  <section><h2>Leadership</h2><div>
+    <article><h3>Vancouver Pioneer Leo Club · Vice President</h3><p class="dates"><time datetime="2019">2019</time> - present</p><p>Volunteering and nonprofit work, including fundraising $10,000 for BC Children's Hospital.</p></article>
+    <article><h3>Southpointe Economics Club · President</h3><p class="dates"><time datetime="2021">2021</time> - <time datetime="2023">2023</time></p></article>
+    <article><h3>Melvin Jones Fellowship Award</h3><p class="dates"><time datetime="2023">2023</time></p></article>
+  </div></section>
+  <section><h2>Additional interests</h2><div><h3>Piano · Royal Conservatory of Music</h3><p class="dates"><time datetime="2014">2014</time> - present</p><p>More than 10 regional and provincial competition awards.</p><p>Interests include economics, big data, engineering, artificial intelligence, and the stock market.</p></div></section>
+</main>
+<footer>John Wang · Data science, AI, and ideas worth exploring.</footer>
 </body>
 </html>

@@ -1,0 +1,7 @@
+*.pdf binary
+*.png binary
+*.svg text
+*.html text
+*.css text
+*.py text
+*.csv text
