@@ -1,18 +1,20 @@
-/* Lab 2: shared typography, flexible navigation, Grid and subgrid. */
+/* Shared layout and colors for every page. */
 :root {
-  --color-accent: oklch(48% 0.09 190);
-  --color-border: oklch(83% 0.02 200);
-  --color-muted: #52646b;
+  color-scheme: light dark;
+  --color-accent: light-dark(oklch(48% 0.09 190), oklch(78% 0.10 190));
+  --button-text: light-dark(white, #10272b);
+  --color-border: oklch(50% 0.04 200 / 40%);
+  --color-muted: light-dark(#52646b, #adbec7);
   accent-color: var(--color-accent);
-  color: #192e36;
-  background: #fbfcfc;
+  color: canvastext;
+  background: canvas;
 }
 * { box-sizing: border-box; }
 body {
   font: 100%/1.6 system-ui, sans-serif;
   max-width: 100ch;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 4.5rem 1rem 1rem;
 }
 a { color: var(--color-accent); text-underline-offset: .2em; }
 a:hover { text-decoration-thickness: .15em; }
@@ -32,7 +34,7 @@ nav a {
 nav a.current { border-bottom-color: var(--color-border); }
 nav a:hover, nav a:focus-visible {
   border-bottom-color: var(--color-accent);
-  background: oklch(from var(--color-accent) 95% .025 h);
+  background: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 .eyebrow { color: var(--color-accent); font-size: .8rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .intro { font-size: 1.15rem; max-width: 65ch; color: var(--color-muted); }
@@ -47,13 +49,15 @@ footer { border-top: 1px solid var(--color-border); margin-top: 3rem; padding-to
 .projects p { margin: 0; color: var(--color-muted); }
 .project-status { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--color-accent); margin-bottom: .35rem; }
 /* Labels share the form's two columns through subgrid. */
-input, textarea, button { font: inherit; }
+input, textarea, button, select { font: inherit; }
+.color-scheme { position: absolute; top: 1rem; right: 1rem; font-size: 80%; }
+.color-scheme select { padding: .25em .4em; border: 1px solid var(--color-border); border-radius: .3rem; }
 form { display: grid; grid-template-columns: auto 1fr; gap: 1em; max-width: 65ch; margin-block: 2rem; }
 form label { display: grid; grid-template-columns: subgrid; grid-column: 1 / -1; align-items: baseline; }
-input, textarea { min-width: 0; width: 100%; padding: .65em .8em; border: 1px solid var(--color-border); border-radius: .35rem; color: inherit; background: white; }
+input, textarea { min-width: 0; width: 100%; padding: .65em .8em; border: 1px solid var(--color-border); border-radius: .35rem; color: inherit; background: canvas; }
 textarea { resize: vertical; min-height: 10rem; }
-button { grid-column: 1 / -1; padding: .7em 1em; border: 0; border-radius: .35rem; color: white; background: var(--color-accent); cursor: pointer; font-weight: 650; }
-button:hover { background: oklch(40% .08 190); }
+button { grid-column: 1 / -1; padding: .7em 1em; border: 0; border-radius: .35rem; color: var(--button-text); background: var(--color-accent); cursor: pointer; font-weight: 650; }
+button:hover { background: color-mix(in oklch, var(--color-accent), canvastext 12%); }
 .form-note { color: var(--color-muted); font-size: .9rem; }
 /* Resume sections use a consistent label column and readable entries. */
 .resume-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: 2rem; }
@@ -76,7 +80,8 @@ button:hover { background: oklch(40% .08 190); }
   .projects { grid-template-columns: 1fr; }
 }
 @media print {
-  nav, footer { display: none; }
+  :root { color-scheme: light !important; }
+  nav, footer, .color-scheme { display: none; }
   body { max-width: none; padding: 0; background: white; font-size: 10pt; }
   h1 { font-size: 28pt; }
   .resume section { break-inside: avoid; padding-block: 1rem; }
