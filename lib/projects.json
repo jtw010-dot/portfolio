@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Two perspectives on U.S. carbon emissions",
+    "year": 2026,
+    "image": "images/project2-opposing-chart.png",
+    "alt": "Emissions reductions for European G7 members, the United States, Japan, and Canada",
+    "description": "DSC 106 group project exploring how framing changes the story of U.S. emissions. My contribution compares a 21.5% reduction among pooled European G7 members with 13.8% in the U.S. This links to my chart; the final group report is not linked here yet.",
+    "status": "Group project / my contribution",
+    "placeholder": false,
+    "url": "images/project2-opposing-chart.png",
+    "linkLabel": "View my opposing chart"
+  },
+  {
+    "title": "Grocery processing across stores",
+    "year": 2026,
+    "image": "projects/project1/project1_visualization.png",
+    "alt": "Grocery processing across stores",
+    "description": "Whole Foods has a lower predicted ultra-processed share than both other stores in 13 of 15 food groups.",
+    "status": "Completed / DSC 106",
+    "placeholder": false,
+    "url": "projects/project1/project1_expository_visualization.pdf",
+    "linkLabel": "View chart and write-up (PDF)"
+  },
+  {
+    "title": "Patterns across time",
+    "year": 2026,
+    "image": "images/project-placeholder.svg",
+    "alt": "Patterns across time",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "A closer look at cities",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "alt": "A closer look at cities",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Comparing communities",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "alt": "Comparing communities",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Data and the environment",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "alt": "Data and the environment",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Understanding uncertainty",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "alt": "Understanding uncertainty",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Stories in public data",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "alt": "Stories in public data",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "An interactive comparison",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "alt": "An interactive comparison",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Mapping local patterns",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "alt": "Mapping local patterns",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "Designing for exploration",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "alt": "Designing for exploration",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  },
+  {
+    "title": "A final visual story",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "alt": "A final visual story",
+    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
+    "status": "Placeholder",
+    "placeholder": true
+  }
+]

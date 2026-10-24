@@ -11,3 +11,5 @@ Project 1 includes the GroceryDB visualization, PDF write-up, and reproducible P
 Lab 3 generates navigation from one shared JavaScript module, highlights the current page, and adds an Automatic/Light/Dark theme selector that remembers your choice. The contact form creates a properly encoded email draft.
 
 To preview locally, open a terminal in this folder and run `python -m http.server 8000`, then visit http://localhost:8000/. JavaScript modules need an HTTP server rather than opening an HTML file directly.
+
+Lab 4 stores twelve projects in lib/projects.json. Shared functions build the full gallery, its count, and the first three homepage cards. Live GitHub stats include a refresh button and an error fallback. Placeholder years are sample data; real coursework retains its actual year. Project 2 links to my chart contribution rather than an unverified group report.

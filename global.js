@@ -89,3 +89,60 @@ contactForm?.addEventListener('submit', (event) => {
   const data = new FormData(contactForm);
   location.href = buildMailtoURL(contactForm.getAttribute('action'), data);
 });
+
+export async function fetchJSON(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Request failed: ' + response.status + ' ' + response.statusText);
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+    return undefined;
+  }
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  if (!(containerElement instanceof Element)) throw new TypeError('A project container is required.');
+  if (!/^h[1-6]$/.test(headingLevel)) throw new TypeError('Use a heading level from h1 to h6.');
+  if (!Array.isArray(projects)) throw new TypeError('Projects must be an array.');
+  containerElement.replaceChildren();
+  if (!projects.length) {
+    const message = document.createElement('p');
+    message.textContent = 'No projects to display yet.';
+    containerElement.append(message);
+    return;
+  }
+  for (const project of projects) {
+    const article = document.createElement('article');
+    const heading = document.createElement(headingLevel);
+    const status = document.createElement('span');
+    status.className = 'project-status';
+    status.textContent = project.status || 'Project';
+    heading.append(status, project.title || 'Untitled project');
+    const image = document.createElement('img');
+    image.src = new URL(project.image || 'images/project-placeholder.svg', baseURL).href;
+    image.alt = project.alt || project.title || 'Project preview';
+    image.width = 640; image.height = 400; image.loading = 'lazy';
+    image.addEventListener('error', () => {
+      image.src = new URL('images/project-placeholder.svg', baseURL).href;
+    }, { once: true });
+    const description = document.createElement('p');
+    const year = document.createElement('span');
+    year.className = 'project-year';
+    year.textContent = project.placeholder ? project.year + ' · sample year for this placeholder' : String(project.year);
+    description.append(year, project.description || 'More details coming soon.');
+    if (project.url) {
+      const link = document.createElement('a');
+      link.href = new URL(project.url, baseURL).href;
+      link.textContent = project.linkLabel || 'View project';
+      link.className = 'project-link';
+      description.append(link);
+    }
+    article.append(heading, image, description);
+    containerElement.append(article);
+  }
+}
+
+export async function fetchGitHubData(username) {
+  return fetchJSON('https://api.github.com/users/' + encodeURIComponent(username));
+}

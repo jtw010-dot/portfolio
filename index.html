@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio: John Wang</title>
-  <link rel="stylesheet" href="style.css?v=lab3">
-  <script type="module" src="global.js?v=lab3"></script>
+  <link rel="stylesheet" href="style.css?v=lab4">
+  <script type="module" src="global.js?v=lab4"></script>
+<script type="module" src="index.js?v=lab4"></script>
 </head>
 <body>
 <main>
@@ -15,6 +16,18 @@
   <div class="home-links"><a href="projects/">Explore my projects</a><a href="resume/">View my resume</a><a href="contact/">Get in touch</a></div>
   <img class="home-image" src="images/micron.png" alt="Micron logo in black on a white background" width="500">
   <p>My experience includes AI internships at Lenovo and Cisco, alongside community leadership and online ventures.</p>
+<section aria-labelledby="latest-projects-title">
+<h2 id="latest-projects-title">Latest Projects</h2>
+<p class="section-note">My recent work, followed by a clearly labeled preview of a future project.</p>
+<div class="projects" aria-live="polite"><p>Loading projects…</p></div>
+<noscript><p>Enable JavaScript to view the project gallery.</p></noscript>
+<p><a href="projects/">View all projects</a></p>
+</section>
+<section class="github-profile" aria-labelledby="github-title">
+<div class="section-heading"><h2 id="github-title">GitHub activity</h2><button id="refresh-stats" type="button">Refresh stats</button></div>
+<p class="section-note">Live public counts for <a href="https://github.com/jtw010-dot" target="_blank" rel="noopener noreferrer">@jtw010-dot</a>, loaded from GitHub.</p>
+<div id="profile-stats" aria-live="polite" aria-busy="true"><p>Loading GitHub stats…</p></div>
+</section>
 </main>
 <footer>John Wang · Data science, AI, and ideas worth exploring.</footer>
 </body>
