@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "elocuent": "^0.0.4"
+  },
+  "name": "john-wang-portfolio",
+  "private": true,
+  "scripts": {
+    "analyze": "elocuent -d . -o meta/loc.csv --spaces 2"
+  }
+}

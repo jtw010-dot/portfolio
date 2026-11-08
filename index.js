@@ -1,4 +1,4 @@
-import { fetchJSON, renderProjects, fetchGitHubData } from './global.js?v=lab4';
+import { fetchJSON, renderProjects, fetchGitHubData } from './global.js?v=lab6';
 async function loadLatestProjects() {
   const container = document.querySelector('.projects');
   const projects = await fetchJSON(new URL('./lib/projects.json', import.meta.url));

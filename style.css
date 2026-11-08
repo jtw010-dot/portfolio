@@ -123,3 +123,43 @@ button:disabled { opacity: .6; cursor: wait; }
 .filter-toolbar button:disabled { cursor: default; }
 @media (max-width: 30rem) { .project-chart { justify-content: center; gap: 1rem; } .legend { flex-basis: 100%; } .filter-toolbar { align-items: flex-start; flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { #projects-plot path { transition: none; } }
+
+/* Lab 6: code statistics, commit scatterplot, and linked selection. */
+.meta-page { max-width: 1150px; }
+#stats .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-block: 2rem; }
+#stats .stats > div { border-top: 2px solid var(--color-border); padding-top: .6rem; }
+#stats dt { color: var(--color-muted); font-size: .85rem; }
+#stats dd { margin: .2rem 0 0; font-size: 2rem; font-weight: 700; color: var(--color-accent); }
+.meta-chart-scroll { overflow-x: auto; }
+#chart { min-width: 560px; }
+#chart svg { display: block; width: 100%; overflow: visible; touch-action: none; }
+#chart .axis { color: var(--color-muted); font-size: 12px; }
+#chart .axis-title { fill: var(--color-muted); font-size: 14px; }
+#chart .gridlines { color: var(--color-border); }
+#chart .gridlines .domain { display: none; }
+#chart .gridlines line { stroke-opacity: .4; }
+#chart .dots circle, #size-legend circle { fill: var(--color-accent); fill-opacity: .7; stroke: canvas; stroke-width: 1; }
+#chart .dots circle { cursor: pointer; transition: transform 180ms, fill 180ms; transform-origin: center; transform-box: fill-box; }
+#chart .dots circle:hover, #chart .dots circle:focus-visible { transform: scale(1.15); fill-opacity: 1; stroke: canvastext; outline: none; }
+#chart .dots circle.selected { fill: light-dark(#be185d, #fb7185); stroke: canvastext; stroke-width: 2; }
+#chart .brush .selection { fill: var(--color-accent); fill-opacity: .1; stroke: var(--color-accent); stroke-dasharray: 5 3; }
+#size-legend { max-width: 590px; }
+#size-legend svg { display: block; width: 100%; }
+#size-legend text { fill: var(--color-muted); font-size: 14px; }
+#selection-count { font-weight: 700; margin: 0; }
+#clear-selection:disabled { cursor: default; }
+.language-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+.language-stats > div { padding: 1rem; border: 1px solid var(--color-border); border-radius: .5rem; }
+.language-stats dt { font-weight: 700; }
+.language-stats dd { margin: .3rem 0 0; }
+.language-bar { height: .45rem; background: color-mix(in oklch, var(--color-accent), canvas 90%); border-radius: 1rem; overflow: hidden; }
+.language-bar span { display: block; height: 100%; background: var(--color-accent); }
+#selected-commits { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: .85rem; }
+dl.info { display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; margin: 0; }
+dl.info dt { color: var(--color-muted); }
+dl.info dd { margin: 0; overflow-wrap: anywhere; }
+.tooltip { position: fixed; z-index: 20; top: 1rem; left: 1rem; max-width: min(360px, calc(100vw - 16px)); padding: 1rem; border: 1px solid var(--color-border); border-radius: .6rem; background: canvas; box-shadow: 0 5px 24px #0003; font-size: .85rem; }
+.tooltip[hidden] { display: none; }
+.meta-method { border-top: 1px solid var(--color-border); padding-top: 1rem; font-size: .9rem; color: var(--color-muted); }
+@media (max-width: 40rem) { #stats .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .meta-page nav { flex-wrap: wrap; } .meta-page nav a { flex-basis: 30%; } }
+@media (prefers-reduced-motion: reduce) { #chart .dots circle { transition: none; } }

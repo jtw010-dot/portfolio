@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta | John Wang</title>
+  <link rel="stylesheet" href="../style.css?v=lab6">
+  <script type="module" src="../global.js?v=lab6"></script>
+  <script type="module" src="main.js?v=lab6"></script>
+</head>
+<body class="meta-page">
+<main>
+  <p class="eyebrow">Behind the portfolio</p>
+  <h1>My code, in context</h1>
+  <p class="intro">An interactive look at the code behind this website: when it changed, how much remains from each commit, and which languages it uses.</p>
+  <div id="stats" aria-busy="true"><p id="load-status" role="status">Loading code statistics…</p></div>
+  <section aria-labelledby="chart-title">
+    <h2 id="chart-title">Commits by time of day</h2>
+    <p class="section-note" id="chart-help">Each dot is a commit. Its area represents the number of current lines last changed by that commit. Hover or focus a dot for details; drag across the plot to select commits.</p>
+    <div class="meta-chart-scroll"><div id="chart"></div></div>
+    <div id="size-legend" aria-label="Circle size legend"></div>
+    <div class="section-heading"><p id="selection-count" role="status" aria-live="polite">No commits selected</p><button type="button" id="clear-selection" disabled>Clear selection</button></div>
+    <h3>Languages in selected commits</h3>
+    <p class="section-note" id="selection-help">Draw a rectangle above, or focus a dot and press Enter to select it.</p>
+    <dl id="language-breakdown" class="language-stats"></dl>
+    <div id="selected-commits"></div>
+  </section>
+  <section class="meta-method" aria-labelledby="method-title">
+    <h2 id="method-title">What these numbers mean</h2>
+    <p>This is a snapshot of the website’s HTML, CSS, and JavaScript at <a href="https://github.com/jtw010-dot/portfolio/tree/c6fb2b042e3b44f5a77d3aa790474320a5e4a747">the completed Lab 5 commit</a>, before adding this page. It was generated with elocuent and Git blame.</p>
+    <p>Only commits that still contribute lines to that snapshot appear here. Dot size counts surviving lines, not every line ever added or deleted, and is not a measure of time spent working. Data files, images, Python, and installed packages are outside this analysis. Dates and times use your browser’s local time zone: <span id="time-zone"></span>.</p>
+    <p><a href="loc.csv" download>Download the analyzed line data (CSV)</a></p>
+  </section>
+  <noscript><p>Enable JavaScript to view and interact with the code analysis.</p></noscript>
+</main>
+<dl id="commit-tooltip" class="info tooltip" hidden>
+  <dt>Commit</dt><dd><a id="commit-link" target="_blank" rel="noopener noreferrer"></a></dd>
+  <dt>Date</dt><dd id="commit-date"></dd>
+  <dt>Time</dt><dd id="commit-time"></dd>
+  <dt>Author</dt><dd id="commit-author"></dd>
+  <dt>Current lines</dt><dd id="commit-lines"></dd>
+</dl>
+<footer>John Wang · A closer look at how this portfolio grew.</footer>
+</body>
+</html>
