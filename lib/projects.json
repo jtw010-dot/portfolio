@@ -1,5 +1,16 @@
 [
   {
+    "title": "Bikewatching: Boston by bike",
+    "year": 2026,
+    "image": "images/bikewatching.png",
+    "alt": "Interactive map of Boston and Cambridge showing morning Bluebikes traffic and green bike lanes",
+    "description": "Explore March 2024 Bluebikes traffic by time of day. Pan and zoom across Boston and Cambridge, compare arrivals and departures, and inspect station-level counts.",
+    "status": "Completed / DSC 106 Lab 7",
+    "placeholder": false,
+    "url": "https://jtw010-dot.github.io/bikewatching/",
+    "linkLabel": "Explore the bike map"
+  },
+  {
     "title": "Two perspectives on U.S. carbon emissions",
     "year": 2026,
     "image": "images/project2-opposing-chart.png",
@@ -22,22 +33,14 @@
     "linkLabel": "View chart and write-up (PDF)"
   },
   {
-    "title": "Patterns across time",
-    "year": 2026,
-    "image": "images/project-placeholder.svg",
-    "alt": "Patterns across time",
-    "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
-    "status": "Placeholder",
-    "placeholder": true
-  },
-  {
     "title": "A closer look at cities",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "alt": "A closer look at cities",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Comparing communities",
@@ -46,7 +49,8 @@
     "alt": "Comparing communities",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Data and the environment",
@@ -55,7 +59,8 @@
     "alt": "Data and the environment",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Understanding uncertainty",
@@ -64,7 +69,8 @@
     "alt": "Understanding uncertainty",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Stories in public data",
@@ -73,7 +79,8 @@
     "alt": "Stories in public data",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "An interactive comparison",
@@ -82,7 +89,8 @@
     "alt": "An interactive comparison",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Mapping local patterns",
@@ -91,7 +99,8 @@
     "alt": "Mapping local patterns",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "Designing for exploration",
@@ -100,7 +109,8 @@
     "alt": "Designing for exploration",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   },
   {
     "title": "A final visual story",
@@ -109,6 +119,7 @@
     "alt": "A final visual story",
     "description": "A space for a future project. I'll add the question, visualization, and what I learned here as I complete more work.",
     "status": "Placeholder",
-    "placeholder": true
+    "placeholder": true,
+    "url": ""
   }
 ]
